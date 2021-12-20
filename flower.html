@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/images (1).png" rel="icon">
+    <title>Flowers</title>
+    <link href="img/favicon.ico" rel="icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/flower.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+
+<body>
+    <nav include-html="nav.html" id="indexNave_file"></nav>
+    <div id="page">
+        <hr>    
+        <h4>Flowers</h4>
+        <p>
+            Send Flowers wishes to impress your loved ones truly. 
+            With 1000s to choose from you will find a thoughtful gift that convey how much you care.
+        </p>
+    </div>
+
+    <div class="container" >
+        <div class="row myrow" id="myrow" style="padding: 5px;">
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js" type="text/JavaScript"></script>
+    <script src="js/include-html.min.js" type="text/JavaScript"></script>
+    <script src="js/bootstrap.bundle.js" type="text/JavaScript"></script>
+    <script src="js/myscript.js" type="text/JavaScript"></script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        var jsobj;
+        xhr.open("GET", "json/data.json");
+        xhr.onreadystatechange = function () 
+        {
+            if (xhr.readyState == 4 && xhr.status == 200) 
+            {
+                jsobj= JSON.parse(xhr.response);
+                displayData(jsobj);
+                console.log(jsobj)
+            }
+        }
+        
+        function displayData(jsobj) 
+        {
+            for (var i = 0; i < jsobj.length-1; i++) 
+            {
+                var contanier = document.getElementById("myrow");
+
+                var div = document.createElement("div");
+                div.setAttribute("class","col-lg-3 col-md-6 col-sm-12");
+
+                var div2 = document.createElement("div");
+                div2.setAttribute("class"," col-md-12 ");
+
+                var divimg = document.createElement("div");
+                var image = document.createElement("img");
+                image.setAttribute("src","json/"+jsobj[i].image) ;
+                divimg.appendChild(image);
+                div2.appendChild(divimg);
+
+                var name = document.createElement("p");
+                name.innerHTML = jsobj[i].name ;
+                div2.appendChild(name);
+
+                var price = document.createElement("p");
+                price.innerHTML = " EGP " +jsobj[i].price ;
+                div2.appendChild(price);
+
+                var btn = document.createElement("button");
+                btn.setAttribute("type","submit");
+                btn.innerHTML = "<i class='fas fa-cart-plus'></i>Add to cart" ;
+                div2.appendChild(btn);
+ 
+                div.appendChild(div2); 
+                contanier.appendChild(div);    
+                
+            }     
+        }
+        xhr.send("");
+    </script>
+</body>
+
+</html>

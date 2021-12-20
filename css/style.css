@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(138, 128, 128);
 }
 
 ::-webkit-scrollbar{
@@ -24,6 +23,7 @@ body{
     background-color: white;
     position: fixed;
     transition: 1s all;
+    z-index: 1;
 }
 #lines{
     display: none;
