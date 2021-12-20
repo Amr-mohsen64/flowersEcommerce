@@ -1,0 +1,39 @@
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.container1{
+    width: 100%;
+    background-color: #faf0ec;
+    text-align: center;
+}
+.fonts h3{
+    margin:40px 0 40px 0;
+    color: rgb(104, 102, 102);
+}
+
+.fonts p{
+    font-size: 13px;
+    line-height: 25px;
+    color: rgb(26, 23, 23);
+    opacity: .9;
+}
+.fonts h6{
+    color: rgba(0,0,0,.8)
+}
+
+.fonts h4{
+    margin-top:70px;
+    color: rgb(104, 102, 102);
+    
+}
+
+
+
+
+
+
+
+
