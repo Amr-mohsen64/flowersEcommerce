@@ -1,20 +1,39 @@
-body{
+:root {
+    --main-color: #0b586d;
+}
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(138, 128, 128);
+    background-color: rgb(243, 239, 239);
     
 }
-
-::-webkit-scrollbar{
-    background-color:rgb(214, 211, 211);
+.page-wraper{
+    min-height: 100%;
+    background-color: red;
+}
+::-webkit-scrollbar {
+    background-color: rgb(214, 211, 211);
     width: 10px;
-   
 }
 
-::-webkit-scrollbar-thumb{
-   
-    background-color: grey;  
+::-webkit-scrollbar-thumb {
+    background-color: grey;
     border-radius: 20px;
-    
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+a.under-line {
+    border-bottom: 1px solid var(--main-color);
+    padding: 1px;
+}
+
+.main-color {
+    color: var(--main-color);
 }

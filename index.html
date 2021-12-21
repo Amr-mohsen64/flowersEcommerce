@@ -9,6 +9,7 @@
     <link href="img/favicon.ico" rel="icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,23 +17,69 @@
 </head>
 
 <body>
-    <nav include-html="nav.html" id="indexNave_file"></nav>
+    <!-- start nav -->
+    <nav class="navbar">
+        <img src="https://cdn.zeplin.io/5f180e07111b776cefe98a2f/assets/DCB7DFDD-132D-47DC-8EFC-A1C2FC442A0B.svg?w=70&h=70&auto=compress,format"
+            id="lines">
+        <img src="https://floward.imgix.net/web/Files/attachment/floward-logo-01-637374032965010488.svg?w=110&h=32&fit=crop&crop=entropy"
+            width="110" height="31">
+        <ul class="navbarul">
+            <li><a href="flower.html">Flowers</a></li>
+            <li><a href="#">Plants</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Celebrations</button>
+                    <div class="dropdown-content">
+                        <a href="#">I Love You</a>
+                        <a href="#">Thank You</a>
+                        <a href="#">Chrismats</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Designers</a></li>
+        </ul>
+        <img class="navcart-img" width="30px"
+            src="https://floward.imgix.net/web/Files/attachment/group-1692-637429305936972359.svg?w=70&h=70&auto=compress,format&fit=crop">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Products.." id="navsearchbox">
+        <div class="navslide">
+            <ul class="navslideul">
+                <li><a href="flower.html">Flowers</a></li>
+                <li><a href="#">Plants</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-sort-up"></i>Celebrations</button>
+                        <div class="dropdown-content">
+                            <a href="#">I Love You</a>
+                            <a href="#">Thank You</a>
+                            <a href="#">Chrismats</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Designers</a></li>
+                <input type="text" placeholder="Search Products.." id="navsearchbox2">
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+
     <div style="height: 60px;"></div>
+
     <header class="banner">
         <img src="img/banner.jpg">
     </header>
-    <section class="container1">
+    <section class="containerwhy">
         <section class="container">
             <div class="row">
                 <div class="col-md-12 fonts">
                     <h3>WHY SEND FLOWERS WITH FLOWARD?</h3>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 fonts ">
+                <div class="col-md-4 fonts">
                     <img src="img/why3.png">
                     <h6>All Flowers are arranged in our workshop</h6>
                     <p>All the arrangements are arranged with love and care by our florists in-house.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 fonts">
+                <div class="col-md-4 fonts">
                     <img src="img/why2.png">
                     <h6>Same-day delivery in our refrigerated vans</h6>
                     <p>We understand busy lifestyles,
@@ -41,7 +88,7 @@
                         flowers arrive fast,
                         and make a beautiful impression every time.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 fonts ">
+                <div class="col-md-4 fonts">
                     <img src="img/why1.png">
                     <h6>Quality flowers sourced from the best farm</h6>
                     <p>We guarantee the best quality flowers,
@@ -56,12 +103,126 @@
         </section>
     </section>
 
+    <section class="containerexplore">
+        <section class="container shdow">
+            <div class="row">
+                <div class="col-md-12 fonts2 ">
+                    <h3>Explore Categories</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0 ">
+                    <div class="minicol1">
+                        <img src="img/explore1.jpg" class="exploreimg">
+                        <h5>Flowers in Vases</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0">
+                    <div class="maxcol">
+                        <img src="img/explore2.jpg" class="exploreimg">
+                        <h5>Flowers and Chocolates</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0">
+                    <div class="maxcol">
+                        <img src="img/explore3.jpg" class="exploreimg">
+                        <h5>Only Flowers</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0">
+                    <div class="minicol2">
+                        <img src="img/explore4.jpg" class="exploreimg">
+                        <h5>Flowers and Perfumes</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0">
+                    <div class="minicol2 ms-2">
+                        <img src="img/explore6.jpg" class="exploreimg ">
+                        <h5>Flowers and Cakes</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 fonts2 p-0 ">
+                    <div class="minicol2">
+                        <img src="img/explore5.jpg" class="exploreimg">
+                        <h5>Flowers and Perfumes</h5>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section class="containerexplore">
+        <section class="container">
+            <div class="row" id="rowitem">
+                <div class="col-md-12 fonts4">
+                    <h3>NEW ARRANGMENT</h3>
+                </div>
+
+        </section>
+    </section>
 
 
-    <script src="js/jquery-3.6.0.min.js" type="text/JavaScript"></script>
-    <script src="js/include-html.min.js" type="text/JavaScript"></script>
-    <script src="js/bootstrap.bundle.js" type="text/JavaScript"></script>
-    <script src="js/myscript.js" type="text/JavaScript"></script>
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>GET TO KNOW US</h3>
+                    <div class="divider"></div>
+                    <ul class="list-unstyled pt-2">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>OUR DESIGNERS</h3>
+                    <div class="divider"></div>
+                    <ul class="list-unstyled pt-2">
+                        <li><a href="#">Ascia</a></li>
+                        <li><a href="#">Dana Al Tuwarish</a></li>
+                        <li><a href="#">Amr Mohsen</a></li>
+                        <li><a href="#">Martina Samuel</a></li>
+                        <li><a href="#">Ahmed elWakeel</a></li>
+                        <li><a href="#">Hend Alawadhi</a></li>
+                        <li><a class="under-line" href="#">View All</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>BRANDS</h3>
+                    <div class="divider"></div>
+                    <ul class="list-unstyled pt-2">
+                        <li><a href="#">Fleur</a></li>
+                        <li><a href="#">MOKO</a></li>
+                        <li><a href="#">Areej</a></li>
+                        <li><a href="#">Alrifai</a></li>
+                        <li><a href="#">Cookievore</a></li>
+                        <li><a class="under-line" href="#">View All</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>FOLLOW US</h3>
+                    <div class="divider"></div>
+                    <ul class="list-unstyled pt-2">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights text-center">
+            All rights reserved ®-2021 Floward - V 3.5.4
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+    <script src="js/homescript.js" type="text/JavaScript"></script>
+    <script src="js/navscript.js" type="text/JavaScript"></script>
 </body>
 
 </html>
