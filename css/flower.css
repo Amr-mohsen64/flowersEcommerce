@@ -1,4 +1,3 @@
-
 #page ,
 .myrow
 {
@@ -22,18 +21,26 @@
 }
 .myrow
 {  
-    background-color: rgb(240, 234, 234) !important;
+    margin-bottom: 20px;
+    background-color: #ecebeb ;
 }
-.myrow div
+
+.minimizecol
 {
     text-align: center;
     background-color:white;
     overflow: hidden;
+    margin: 10px;
 }
-.myrow div div
+.imgdiv
 {
-    width: 85%;
+    width: 80%;
+    text-align: center;
+    height: 75%;
     overflow: hidden;
+    margin-left: 28px;
+    margin-top: 10px;
+
 }
 .myrow img
 {
@@ -73,6 +80,11 @@
     background: #085671;
     color: white;
 }
-
+@media screen and (max-width:767px){
+    .imgdiv
+    {
+        margin-left:20px;
+    }
+}
 
     

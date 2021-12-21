@@ -12,13 +12,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="css/all.css" rel="stylesheet">
     <link href="css/flower.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
 
 <body>
-    <nav include-html="nav.html" id="indexNave_file"></nav>
+     <!-- start nav -->
+     <nav class="navbar">
+        <img src="https://cdn.zeplin.io/5f180e07111b776cefe98a2f/assets/DCB7DFDD-132D-47DC-8EFC-A1C2FC442A0B.svg?w=70&h=70&auto=compress,format"
+            id="lines">
+        <img src="https://floward.imgix.net/web/Files/attachment/floward-logo-01-637374032965010488.svg?w=110&h=32&fit=crop&crop=entropy"
+            width="110" height="31">
+        <ul class="navbarul">
+            <li><a href="flower.html">Flowers</a></li>
+            <li><a href="#">Plants</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Celebrations</button>
+                    <div class="dropdown-content">
+                        <a href="#">I Love You</a>
+                        <a href="#">Thank You</a>
+                        <a href="#">Chrismats</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Designers</a></li>
+        </ul>
+        <img class="navcart-img" width="30px"
+            src="https://floward.imgix.net/web/Files/attachment/group-1692-637429305936972359.svg?w=70&h=70&auto=compress,format&fit=crop">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Products.." id="navsearchbox">
+        <div class="navslide">
+            <ul class="navslideul">
+                <li><a href="#">Flowers</a></li>
+                <li><a href="#">Plants</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-sort-up"></i>Celebrations</button>
+                        <div class="dropdown-content">
+                            <a href="#">I Love You</a>
+                            <a href="#">Thank You</a>
+                            <a href="#">Chrismats</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Designers</a></li>
+                <input type="text" placeholder="Search Products.." id="navsearchbox2">
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
     <div id="page">
         <hr>    
         <h4>Flowers</h4>
@@ -29,10 +75,67 @@
     </div>
 
     <div class="container" >
-        <div class="row myrow" id="myrow" style="padding: 5px;">
+        <div class="row myrow " id="myrow" >
         </div>
     </div>
-    
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>GET TO KNOW US</h3>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled pt-2">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>OUR DESIGNERS</h3>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled pt-2">
+                            <li><a href="#">Ascia</a></li>
+                            <li><a href="#">Dana Al Tuwarish</a></li>
+                            <li><a href="#">Amr Mohsen</a></li>
+                            <li><a href="#">Martina Samuel</a></li>
+                            <li><a href="#">Ahmed elWakeel</a></li>
+                            <li><a href="#">Hend Alawadhi</a></li>
+                            <li><a class="under-line" href="#">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>BRANDS</h3>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled pt-2">
+                            <li><a href="#">Fleur</a></li>
+                            <li><a href="#">MOKO</a></li>
+                            <li><a href="#">Areej</a></li>
+                            <li><a href="#">Alrifai</a></li>
+                            <li><a href="#">Cookievore</a></li>
+                            <li><a class="under-line" href="#">View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>FOLLOW US</h3>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled pt-2">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-rights text-center">
+                All rights reserved ®-2021 Floward - V 3.5.4
+            </div>
+        </footer>
+        <!-- end footer -->
     <script src="js/jquery-3.6.0.min.js" type="text/JavaScript"></script>
     <script src="js/include-html.min.js" type="text/JavaScript"></script>
     <script src="js/bootstrap.bundle.js" type="text/JavaScript"></script>
@@ -55,36 +158,19 @@
         {
             for (var i = 0; i < jsobj.length-1; i++) 
             {
-                var contanier = document.getElementById("myrow");
-
-                var div = document.createElement("div");
-                div.setAttribute("class","col-lg-3 col-md-6 col-sm-12");
-
-                var div2 = document.createElement("div");
-                div2.setAttribute("class"," col-md-12 ");
-
-                var divimg = document.createElement("div");
-                var image = document.createElement("img");
-                image.setAttribute("src","json/"+jsobj[i].image) ;
-                divimg.appendChild(image);
-                div2.appendChild(divimg);
-
-                var name = document.createElement("p");
-                name.innerHTML = jsobj[i].name ;
-                div2.appendChild(name);
-
-                var price = document.createElement("p");
-                price.innerHTML = " EGP " +jsobj[i].price ;
-                div2.appendChild(price);
-
-                var btn = document.createElement("button");
-                btn.setAttribute("type","submit");
-                btn.innerHTML = "<i class='fas fa-cart-plus'></i>Add to cart" ;
-                div2.appendChild(btn);
- 
-                div.appendChild(div2); 
-                contanier.appendChild(div);    
-                
+                var row = document.getElementById("myrow");
+                var boot =
+                `<div class='col-lg-3 col-md-6 col-6 fonts3'>
+                    <div class='minimizecol'>
+                        <div class='imgdiv'>
+                            <img class='newimg' src="json/${jsobj[i].image}" >
+                        </div>
+                        <p>${jsobj[i].name} </p>
+                        <p> EGP ${jsobj[1].price} </p>
+                        <button><i class='fas fa-cart-plus'></i>Add to cart</button>
+                    </div>
+                </div>`
+                row.innerHTML += boot;
             }     
         }
         xhr.send("");
