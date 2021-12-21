@@ -1,7 +1,7 @@
 var newone = [];
 var mydiv = document.getElementById("rowitem");
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "../json/data.json");
+xhr.open("GET", "json/data.json");
 xhr.send();
 xhr.addEventListener("readystatechange", function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
