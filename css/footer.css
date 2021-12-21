@@ -28,4 +28,7 @@ footer .copy-rights {
     background-color: white;
     padding: 20px;
 }
+footer a:hover{
+    color: var(--main-color);
+}
 /* end footer  */
