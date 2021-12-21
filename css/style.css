@@ -339,9 +339,7 @@ a,
 a:hover {
     text-decoration: none;
 }
-footer a:hover{
-    color: var(--main-color);
-}
+
 
 a.under-line {
     border-bottom: 1px solid var(--main-color);
@@ -350,4 +348,25 @@ a.under-line {
 
 .main-color {
     color: var(--main-color);
+}
+button
+{
+    padding: 6px ;
+    margin-bottom: 8px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: honeydew;
+    cursor: pointer;
+    width: 80%;
+    border-radius: .25rem;
+    color: #085671;
+}
+button i
+{
+   padding-right: 5%;
+}
+button:hover
+{
+    background: #085671;
+    color: white;
 }

@@ -4,7 +4,7 @@
     background-color: white;
     position: fixed;
     transition: 1s all;
-    margin-bottom: 50px;
+    z-index: 3;
 }
 
 #lines {
@@ -12,15 +12,16 @@
 }
 
 .navbar img {
-    margin-left: 150px;
-    margin-top: -4px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10%;
     cursor: pointer;
 }
 
 .navbar ul {
     list-style: none;
-    margin-right: 700px;
-    margin-top: 10px;
+    margin-right: 50%;
+    margin-top: 1%;
 }
 
 .navbar li {
@@ -85,6 +86,8 @@
     top: 15px;
     right: 150px;
     cursor: pointer;
+    max-width: 100%;
+
 }
 
 .navslide {
@@ -107,6 +110,8 @@
     top: 11px;
     left: -49px;
     transition: 1s all;
+    display: none;
+
 }
 
 .navslide li {
@@ -147,26 +152,6 @@
     font-weight: 400;
 }
 
-@media (max-width: 1345px) {
-    .navbar ul {
-        list-style: none;
-        margin-right: 650px;
-        margin-top: 10px;
-    }
-
-    .navslide2 {
-        display: none;
-    }
-}
-
-@media (max-width: 1320px) {
-    .navbar ul {
-        list-style: none;
-        margin-right: 550px;
-        margin-top: 10px;
-    }
-}
-
 @media (max-width: 1200px) {
     .navbar ul {
         list-style: none;
@@ -200,70 +185,8 @@
     }
 }
 
-@media (max-width: 1100px) {
-    .navbar ul {
-        list-style: none;
-        margin-right: 350px;
-        margin-top: 10px;
-    }
 
-    .navcart-img {
-        position: absolute;
-        top: 15px;
-        right: 50px;
-        cursor: pointer;
-    }
-
-    .fa-search {
-        position: absolute;
-        top: 18px;
-        right: 100px;
-        font-size: 23px;
-        color: #045e92;
-        cursor: pointer;
-    }
-
-    #navsearchbox {
-        position: absolute;
-        top: 18px;
-        right: 140px;
-        border: 0.5px solid #7090a3;
-        border-radius: 15px;
-        width: 200px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .navbar ul {
-        list-style: none;
-        margin-right: 345px;
-        margin-top: 10px;
-    }
-
-    .navcart-img {
-        position: absolute;
-        top: 15px;
-        right: 100px;
-        cursor: pointer;
-    }
-
-    .fa-search {
-        position: absolute;
-        top: 18px;
-        right: 150px;
-        font-size: 23px;
-        color: #045e92;
-        cursor: pointer;
-    }
-
-    .navbar img {
-        margin-left: 50px;
-        margin-top: -4px;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width:1100px) {
     .navbarul {
         list-style: none;
         display: none;
@@ -303,8 +226,4 @@
     .navslide2 {
         display: inline-block;
     }
-}
-
-#ahmed {
-    background-color: red;
 }
