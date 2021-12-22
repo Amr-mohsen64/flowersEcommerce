@@ -18,6 +18,7 @@
 #page h4
 {
     font-weight: bold;
+    margin-top: 0px;
 }
 .myrow
 {  
@@ -59,7 +60,7 @@
     transform: scale(1.2);
     cursor: pointer;
 }
-.myrow button
+.addtocart
 {
     padding: 6px ;
     margin-bottom: 8px;
@@ -71,11 +72,11 @@
     border-radius: .25rem;
     color: #085671;
 }
-.myrow button i
+.addtocart i
 {
    padding-right: 5%;
 }
-.myrow button:hover
+.addtocart:hover
 {
     background: #085671;
     color: white;
