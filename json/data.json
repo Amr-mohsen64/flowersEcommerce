@@ -1,5 +1,4 @@
-[
-   {
+[{
         "id": 1,
         "name": "Monet's Garden",
         "price": 1655,
@@ -78,7 +77,7 @@
         "description": "Height 90 CM Width 40 CM The arrangement contains  Sunflowers.",
         "clebrate": "Happy Birthday",
         "image": "images/9.jpg",
-        "designer":"Dana Al Tuwarish"
+        "designer": "Dana Al Tuwarish"
     },
     {
         "id": 10,
@@ -87,7 +86,7 @@
         "description": "Height 70 CM Width 40 CM share the happiness and send this Gorgeous arrangement containing sunflowers and lilies.",
         "clebrate": "Thank You",
         "image": "images/10.jpg",
-        "designer":"Dana Al Tuwarish"
+        "designer": "Dana Al Tuwarish"
     },
     {
         "id": 11,
@@ -168,7 +167,7 @@
         "description": "Height 90 CM Width 40 CM The arrangement contains  Sunflowers.",
         "clebrate": "Happy Birthday",
         "image": "images/9.jpg",
-        "designer":"Dana Al Tuwarish"
+        "designer": "Dana Al Tuwarish"
     },
     {
         "id": 20,
@@ -177,9 +176,7 @@
         "description": "Height 70 CM Width 40 CM share the happiness and send this Gorgeous arrangement containing sunflowers and lilies.",
         "clebrate": "Thank You",
         "image": "images/10.jpg",
-        "designer":"Dana Al Tuwarish"
+        "designer": "Dana Al Tuwarish"
     }
 
 ]
-
-
