@@ -10,7 +10,7 @@ let UrlID = params["designer-id"],
     xhr = new XMLHttpRequest();
 
 //ajax
-xhr.open("GET", "../json/designer.json");
+xhr.open("GET", "json/designer.json");
 xhr.addEventListener("readystatechange", function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
         jsObj = JSON.parse(xhr.responseText);
