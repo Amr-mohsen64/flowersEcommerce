@@ -349,7 +349,7 @@ a.under-line {
 .main-color {
     color: var(--main-color);
 }
-button
+.addtocart
 {
     padding: 6px ;
     margin-bottom: 8px;
@@ -361,11 +361,11 @@ button
     border-radius: .25rem;
     color: #085671;
 }
-button i
+.addtocart i
 {
    padding-right: 5%;
 }
-button:hover
+.addtocart:hover
 {
     background: #085671;
     color: white;

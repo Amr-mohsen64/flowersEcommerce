@@ -15,19 +15,23 @@ var xhr = new XMLHttpRequest();
         {
             for (var i = 0; i < jsobj.length; i++) 
             {
-                var row = document.getElementById("myrow");
-                var boot =
-                `<div class='col-lg-3 col-md-6 col-6 fonts3'>
-                    <div class='minimizecol'>
-                        <div class='imgdiv'>
-                            <img class='newimg' src="json/${jsobj[i].image}" >
+                if(jsobj[i].clebrate=="Thank You")
+                {
+                    var row = document.getElementById("myrow");
+                    var boot =
+                    `<div class='col-lg-3 col-md-6 col-6 fonts3'>
+                        <div class='minimizecol'>
+                            <div class='imgdiv'>
+                                <img class='newimg' src="json/${jsobj[i].image}" >
+                            </div>
+                            <p>${jsobj[i].name} </p>
+                            <p> EGP ${jsobj[i].price} </p>
+                            <button id='${jsobj[i].id}' class='addtocart'><i class='fas fa-cart-plus'></i>Add to cart</button>
                         </div>
-                        <p>${jsobj[i].name} </p>
-                        <p> EGP ${jsobj[i].price} </p>
-                        <button id='${jsobj[i].id}' class='addtocart'><i class='fas fa-cart-plus'></i>Add to cart</button>
-                    </div>
-                </div>`
-                row.innerHTML += boot;
+                    </div>`
+                    row.innerHTML += boot;
+                }
+                
             }  
             for (var i = 0; i < jsobj.length-1; i++) 
             {

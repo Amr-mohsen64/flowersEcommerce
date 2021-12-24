@@ -1,7 +1,7 @@
 var newone = [];
 var mydiv = document.getElementById("rowitem");
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "../json/data.json");
+xhr.open("GET", "json/data.json");
 xhr.addEventListener("readystatechange", function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
         newone = JSON.parse(xhr.responseText);
@@ -18,7 +18,7 @@ xhr.addEventListener("readystatechange", function () {
                         </div>
                         <p>${newone[key].name} </p>
                         <p>EGP ${newone[key].price} </p>
-                        <button><i class='fas fa-cart-plus'></i>Add to cart</button>
+                        <button class='addtocart'><i class='fas fa-cart-plus'></i>Add to cart</button>
                         </div>
                     </div>`
 
