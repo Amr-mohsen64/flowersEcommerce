@@ -81,7 +81,12 @@ xhr.send("");
 
 //counter on cart
 counter = localStorage.length;
-
 function getcount() {
+    if(counter==0){
+        mycanvas.innerHTML = `<h3 class="m-5">your Cart is empty</h3><hr>`;
+        document.getElementById("sum").innerHTML = "0"
+        document.getElementById("sumvat").innerHTML = "0"
+        document.getElementById("sumtot").innerHTML = "0"
+    }
     document.getElementById("myspan").innerHTML = counter;
 }
