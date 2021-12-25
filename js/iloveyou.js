@@ -26,7 +26,7 @@ var xhr = new XMLHttpRequest();
                             </div>
                             <p>${jsobj[i].name} </p>
                             <p> EGP ${jsobj[i].price} </p>
-                            <button id='${jsobj[i].id}' class='addtocart'><i class='fas fa-cart-plus'></i>Add to cart</button>
+                           
                         </div>
                     </div>`
                     row.innerHTML += boot;

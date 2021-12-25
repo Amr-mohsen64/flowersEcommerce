@@ -8,7 +8,6 @@ xhr.addEventListener("readystatechange", function () {
         jsObj = JSON.parse(xhr.responseText);
         let desingers = jsObj["designers"];
         console.log(desingers);
-        // console.log(jsObj["designers"][1]);
         for (let key in desingers) {
             console.log(desingers[key]);
             var col =
@@ -20,7 +19,7 @@ xhr.addEventListener("readystatechange", function () {
                 </div>`
             row.innerHTML += col;
 
-            
+
         }
     }
 })

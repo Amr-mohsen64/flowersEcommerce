@@ -12,9 +12,9 @@ xhr.onreadystatechange = function () {
         console.log(jsobj);
     }
 }
-
+ //page items
 function displayData(jsobj) {
-    for (var i = 0; i < jsobj.length - 1; i++) {
+    for (var i = 0; i < jsobj.length; i++) {
         var row = document.getElementById("myrow");
         var boot =
             `<div class='col-lg-3 col-md-6 col-6 fonts3'>
