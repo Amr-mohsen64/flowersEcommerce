@@ -1,0 +1,73 @@
+{
+    "categories": [{
+            "categoryName": "Cat1",
+            "questions": [{
+                    "questionName": "q.name",
+                    "questionID": "uniqID",
+                    "questionField": "tractor.isThingWorking",
+                    "questionRequired": "0",
+                    "questionType": "radioButton",
+                    "questionLabel": "Is this thing working?",
+                    "answers": [{
+                            "answerType": "radioButton",
+                            "answerLabel": "yes",
+                            "answerValue": "1"
+                        },
+                        {
+                            "answerType": "radioButton",
+                            "answerLabel": "no",
+                            "answerValue": "0"
+                        }
+                    ]
+                },
+                {
+                    "questionName": "q.othername",
+                    "questionID": "q.uniqueID",
+                    "questionField": "tractor.enteredModel",
+                    "questionRequired": "1",
+                    "questionType": "dropdownMenu",
+                    "questionLabel": "Model of the tractor",
+                    "answers": [{
+                            "answerType": "option",
+                            "answerLabel": "John Deere"
+                        },
+                        {
+                            "answerType": "option",
+                            "answerLabel": "New Holland"
+                        },
+                        {
+                            "answerType": "option",
+                            "answerLabel": "Belarus"
+                        },
+                        {
+                            "answerType": "textfield"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryName": "nme of second category",
+            "questions": [{
+                "questionName": "questionName",
+                "questionID": "ID",
+                "questionField": "tractor.engineCheck",
+                "questionRequired": "1",
+                "questionType": "radioButton",
+                "questionLabel": "Is the engine working?",
+                "answers": [{
+                        "answerType": "radioButton",
+                        "answerLabel": "Yes",
+                        "answerValue": "1"
+                    },
+                    {
+                        "answerType": "radioButton",
+                        "answerLabel": "No",
+                        "answerValue": "0"
+                    }
+                ]
+            }]
+        }
+    ]
+
+}

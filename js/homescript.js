@@ -32,12 +32,13 @@ function getdata(javaobj) {
                         </div>
                     </div>`
             mydiv.innerHTML += arrangment;
+        }
 
-            //cart items
-            let local = localStorage.getItem("product" + javaobj[key].id)
-            if (local == javaobj[key].id) {
-                sum += javaobj[key].price;
-                var cartitem = `  
+        //cart items
+        let local = localStorage.getItem("product" + javaobj[key].id)
+        if (local == javaobj[key].id) {
+            sum += javaobj[key].price;
+            var cartitem = `  
                         <div class="col-md-4 col-4 fonts rowcan">
                         <img src="json/${javaobj[key].image}" class="mt-3">
                     </div>
@@ -49,15 +50,15 @@ function getdata(javaobj) {
                     <div class="col-md-2 col-2 rowcan">
                         <i class="fas fa-trash-alt" id="delete${javaobj[key].id}"  data-bs-toggle="modal" data-bs-target="#deleteModal"></i>
                     </div>`
-                mycanvas.innerHTML += cartitem;
-                document.getElementById("sum").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum}`;
-                document.getElementById("sumvat").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum*14/100}`;
-                document.getElementById("sumtot").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum+sum*14/100}`;
-            }
+            mycanvas.innerHTML += cartitem;
+            document.getElementById("sum").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum}`;
+            document.getElementById("sumvat").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum*14/100}`;
+            document.getElementById("sumtot").innerHTML = `<h5 class='d-inline-block'>EGP</h5>\t${sum+sum*14/100}`;
         }
     }
-
 }
+
+
 
 
 //delete from cart
@@ -93,7 +94,6 @@ xhr.send();
 
 //counter on cart
 counter = localStorage.length;
-
 function getcount() {
     document.getElementById("myspan").innerHTML = counter;
 }
