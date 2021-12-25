@@ -35,7 +35,7 @@ function displayData(jsobj) {
             sum += jsobj[i].price;
             var cartitem = `  
                         <div class="col-md-4 col-4 fonts rowcan">
-                        <img src="json/${jsobj[i].image}" class="mt-3">
+                        <img src="json/${jsobj[i].image}" class="mt-3 ms-0">
                     </div>
                     <div class="col-md-6 col-6 rowcan">
                         <h5>${jsobj[i].name}</h5>
