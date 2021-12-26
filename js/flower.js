@@ -57,6 +57,10 @@ function displayData(jsobj) {
             localStorage.setItem("product" + this.id, this.id);
             counter = localStorage.length; //counter on cart
             document.getElementById("myspan").innerHTML = counter; //counter on cart
+            setTimeout(function (){
+                open("flower.html","_self");
+                
+            },1000);
         })
     }
 
@@ -70,6 +74,10 @@ function deletedata(jsobj) {
             var myid = `delete${jsobj[key].id}`
             document.getElementById(myid).addEventListener("click", function () {
                 localStorage.removeItem("product" + jsobj[key].id)
+                setTimeout(function (){
+                    open("flower.html","_self");
+                    
+                },1000);
 
             })
 
@@ -83,7 +91,7 @@ xhr.send("");
 counter = localStorage.length;
 function getcount() {
     if(counter==0){
-        mycanvas.innerHTML = `<h3 class="m-5">your Cart is empty</h3><hr>`;
+        mycanvas.innerHTML = `<div class="col-md-12"><h3 class="m-4">Sorry! Cart is empty&#128527;</h3></div><hr>`;
         document.getElementById("sum").innerHTML = "0"
         document.getElementById("sumvat").innerHTML = "0"
         document.getElementById("sumtot").innerHTML = "0"
